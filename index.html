@@ -51,6 +51,39 @@
     }
   </script>
   <br><br>
-  
+
+
+  <button onclick="openWindow4()">Open Calculator</button>
+  <script>
+    function openWindow4() {
+      const url = "calculator://open";
+    //   const name = "_blank"; // 新しいタブ
+    //   const features = "width=800,height=600,resizable=yes,scrollbars=yes";
+      window.open(url);
+    }
+  </script>
+  <br><br>
+
+  <button onclick="openWindow5()">Open sip protocol</button>
+  <script>
+    function openWindow5() {
+      const url = "sip://admin01@MCAPS01.himiyosh.work";
+    //   const name = "_blank"; // 新しいタブ
+    //   const features = "width=800,height=600,resizable=yes,scrollbars=yes";
+      window.open(url);
+    }
+  </script>
+  <br><br>
+
+  <button onclick="openWindow6()">Open callto protocol</button>
+  <script>
+    function openWindow6() {
+      const url = "callto://+815012345678";
+    //   const name = "_blank"; // 新しいタブ
+    //   const features = "width=800,height=600,resizable=yes,scrollbars=yes";
+      window.open(url);
+    }
+  </script>
+  <br><br>
 </body>
 </html>
