@@ -19,7 +19,7 @@
 <body>
   <h1>Open Window Sample</h1>
 <p>Click the button below to open the specified page in a new tab.</p>
-  <button onclick="openWindow1()">Open Google site</button>
+  <button onclick="openWindow1()">Open Google - NewWindow</button>
   <script>
     function openWindow1() {
       const url = "https://www.google.co.jp/";
@@ -28,15 +28,29 @@
       window.open(url, name, features);
     }
   </script>
-  
-  <button onclick="openWindow2()">Open Teams Desktop</button>
+  <br><br>
+
+  <button onclick="openWindow2()">Open Google - SameWindow</button>
   <script>
     function openWindow2() {
-      const url = "msteams://open"; // Microsoft Teams デスクトップアプリを開く
-      const name = "_blank"; // 新しいタブ
-      const features = "width=800,height=600,resizable=yes,scrollbars=yes";
-      window.open(url, name, features);
+      const url = "https://www.google.co.jp/";
+    //   const name = "_blank"; // 新しいタブ
+    //   const features = "width=800,height=600,resizable=yes,scrollbars=yes";
+      window.open(url);
     }
   </script>
+  <br><br>
+  
+  <button onclick="openWindow3()">Open Teams Desktop</button>
+  <script>
+    function openWindow3() {
+      const url = "msteams://open"; // Microsoft Teams デスクトップアプリを開く
+    //   const name = "_blank"; // 新しいタブ
+    //   const features = "width=800,height=600,resizable=yes,scrollbars=yes";
+      window.open(url);
+    }
+  </script>
+  <br><br>
+  
 </body>
 </html>
