@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Window Open Example</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    button {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>新しいウィンドウを開く</h1>
+  <p>以下のボタンをクリックすると、指定されたページが新しいタブで開きます。</p>
+  <button onclick="openWindow()">Google を開く</button>
+
+  <script>
+    function openWindow() {
+      const url = "https://www.google.co.jp/";
+      const name = "_blank"; // 新しいタブ
+      const features = "width=800,height=600,resizable=yes,scrollbars=yes";
+      window.open(url, name, features);
+    }
+  </script>
+</body>
+</html>
